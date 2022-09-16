@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -15,3 +17,21 @@ export class AppComponent {
   public labels = ['bed', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
 }
+
+//@Component({
+//  selector: 'app-root',
+//  templateUrl: 'app.component.html',
+//  styleUrls: ['app.component.scss'],
+//})
+//export class Alert {
+//  constructor(public alertController: AlertController) {}
+//  
+//  showAlert() {
+//    this.alertController.create({
+//      header: 'Du siger ja til cookies.',
+//      button: ['Okay']
+//    }).then(res => {
+//      res.present();
+//    });
+//  }
+//}
