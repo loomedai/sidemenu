@@ -27,6 +27,10 @@ const routes: Routes = [
   {
     path: 'sider/home',
     loadChildren: () => import('./sider/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'hotel-info',
+    loadChildren: () => import('./sider/hotel-info/hotel-info.module').then( m => m.HotelInfoPageModule)
   }
 ];
 
