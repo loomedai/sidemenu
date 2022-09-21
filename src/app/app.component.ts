@@ -14,7 +14,6 @@ export class AppComponent {
     { title: 'Restauranter', url: '/sider/restauranter', icon: 'restaurant' },
     { title: 'Transport', url: '/sider/transport', icon: 'car' },
   ];
-  public labels = ['bed', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
 }
 
