@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button>Back</ion-back-button>
       </ion-buttons>
-    <ion-title color="light">Hoteller</ion-title>
+    <ion-title>Hoteller</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,7 +13,13 @@
       [routerLink]="['/sider/hoteller', hotel]"
       routerDirection="forward">
       {{ hoteller.Title }}
-     
+      {{ hoteller.Amount }}
+    </ion-item>
+    <ion-item *ngFor="let hoteller of hotel">
+      <div class="img">
+        <img scr="../../../assets/hotel-img/comwell.jpg"/>
+
+      </div>
     </ion-item>
   </ion-list>
 </ion-content>
