@@ -8,14 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class HotellerPage implements OnInit {
 
   hotel = [
-     'hotel 1', 'hotel 2', 'hotel 3'
-
+    { ID: 1, Title: 'Country flat' },
+    { ID: 2, Title: 'Zleep Hotel Prindsen Roskilde' },
+    { ID: 3, Title: 'Scandic Roskilde Park' },
+    { ID: 4, Title: 'Comwell Roskilde' },
+    { ID: 5, Title: 'Motel Oasen' }
     ];
+   
+
+    
    
 
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
