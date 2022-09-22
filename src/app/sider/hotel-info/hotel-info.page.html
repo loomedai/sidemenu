@@ -1,17 +1,17 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button>back</ion-back-button>
       </ion-buttons>
      
     
-    <ion-title>hotel-info</ion-title>
+    <ion-title>{{ tour.Title }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button routerLink="/request"
- routerDirection="forward">
- Book hotel
+  <ion-button routerLink="/sider/hoteller"
+ routerDirection="root">
+ tilbage til hoteller
  </ion-button>
 </ion-content>

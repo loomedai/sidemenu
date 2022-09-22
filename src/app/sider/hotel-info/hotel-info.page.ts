@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-hotel-info',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HotelInfoPage implements OnInit {
 
-  constructor() { }
+  hotel = null;
+
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    console.log(this.activatedRoute);
+ this.hotel = this.activatedRoute.snapshot.params;
   }
 
 }

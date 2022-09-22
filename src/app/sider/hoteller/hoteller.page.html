@@ -8,5 +8,9 @@
 </ion-header>
 
 <ion-content>
-  <ion-button href="/hotel-info" routterDirection="forward">Mere info</ion-button>
+  <ion-list>
+    <ion-item *ngFor="let hoteller of hotel">
+    {{hoteller}}
+    </ion-item>
+  </ion-list>
 </ion-content>
