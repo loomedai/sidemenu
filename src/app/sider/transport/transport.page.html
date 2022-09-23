@@ -10,3 +10,19 @@
 <ion-content>
 
 </ion-content>
+
+<ion-footer class="ion-padding">
+  <ion-segment [(ngModel)]="currentView"
+  (ionChange)="currentViewChanged($event)">
+    <ion-segment-button value="map">
+      <ion-label>Kort</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="route">
+      <ion-label>Rute</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="description">
+      <ion-label>Detailer</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+ </ion-footer>
+ 

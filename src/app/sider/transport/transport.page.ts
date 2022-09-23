@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TransportPage implements OnInit {
 
+  currentView = 'map';
   constructor() { }
-
   ngOnInit() {
   }
 
-}
+  currentViewChanged(ev) {
+  console.log(ev.detail.value);
+  console.log(this.currentView);
+  }
+ }
